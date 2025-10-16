@@ -22,7 +22,8 @@
 It handles **IP packets** and passes them to a user-space program instead of the physical network.  
 This allows custom processing like encryption, encapsulation, or routing.
 
-**Use Case:** VPNs such as OpenVPN or WireGuard use TUN to securely tunnel IP packets.  
+**Use Case:** VPNs such as OpenVPN or WireGuard use TUN to securely tunnel IP packets. 
+ 
 **Example Device:** `/dev/net/tun`
 
 ---
@@ -32,6 +33,7 @@ This allows custom processing like encryption, encapsulation, or routing.
 It acts as a virtual Ethernet device that can connect virtual machines or containers to software bridges.
 
 **Use Case:** Virtualization software like QEMU uses TAP interfaces to connect VMs to the same network bridge.  
+
 **Difference:**  
 - TUN → IP packets (L3)  
 - TAP → Ethernet frames (L2)
